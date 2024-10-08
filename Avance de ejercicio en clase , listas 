@@ -1,0 +1,192 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/pau468/PROGCOM_ESTRUCTURAS-SELECCI-N/blob/main/Avance%20de%20ejercicio%20en%20clase%20%2C%20listas%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "4utfpFOQrs9s",
+        "outputId": "b4fd61cf-a605-4773-9b51-af11a95b86e2"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[500, 400, 300, 200, 100]\n"
+          ]
+        }
+      ],
+      "source": [
+        "#ejercicio 1\n",
+        "list1 = [100, 200, 300, 400, 500]\n",
+        "list1.reverse()\n",
+        "print(list1)  # Resultado: [500, 400, 300, 200, 100]\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#ejercicio 2\n",
+        "# Definir las listas\n",
+        "lista1 = [\"M\", \"nom\",\"e\", \"e\" ]\n",
+        "lista2 = [\"i\", \"bre\", \"s\", \"paula\"]\n",
+        "\n",
+        "# Crear una lista combinada uniendo elementos de ambas listas\n",
+        "resultado = [a + b for a, b in zip(lista1, lista2)]\n",
+        "\n",
+        "# Imprimir el resultado\n",
+        "print(resultado)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "cbRqfhDBxyLZ",
+        "outputId": "bbf7c718-0924-49c0-c367-1a07d142cfb2"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['Mi', 'nombre', 'es', 'epaula']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#ejercicio 3\n",
+        "# Definir la lista\n",
+        "lista = [1, 2, 3, 4, 5, 6, 7]\n",
+        "\n",
+        "# Calcular el cuadrado de cada elemento\n",
+        "cuadrado_lista = [x ** 2 for x in lista]\n",
+        "\n",
+        "# Imprimir el resultado\n",
+        "print(cuadrado_lista)  # Resultado: [1, 4, 9, 16, 25, 36, 49]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7EBuOCWdzHgK",
+        "outputId": "b22423b8-19c3-4c29-ce94-587f7248cd1d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[1, 4, 9, 16, 25, 36, 49]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#ejercicio 4\n",
+        "# Definir las listas\n",
+        "lista1 = [\"Hola \", \"toma \"]\n",
+        "lista2 = [\"Querido\", \"Señor\"]\n",
+        "\n",
+        "# Crear una lista con todas las combinaciones posibles\n",
+        "combinaciones = [palabra1 + palabra2 for palabra1 in lista1 for palabra2 in lista2]\n",
+        "\n",
+        "# Imprimir el resultado\n",
+        "print(combinaciones)  # Resultado: ['Hola Querido', 'Hola Señor', 'toma Querido', 'toma Señor']"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tocj-cRBzqTp",
+        "outputId": "36c5ce86-6ad6-4a5b-95e9-2ecfd4557d55"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['Hola Querido', 'Hola Señor', 'toma Querido', 'toma Señor']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#ejercicio 5\n",
+        "# Definir las listas\n",
+        "list1 = [10, 20, 30, 40]\n",
+        "list2 = [100, 200, 300, 400]\n",
+        "\n",
+        "# Usar zip y reversed para emparejar los elementos de ambas listas\n",
+        "for a, b in zip(list1, reversed(list2)):\n",
+        "    print(a, b)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "X1P2JnuD0AX7",
+        "outputId": "5c1c8452-1655-42d3-9e08-9f46e333934c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10 400\n",
+            "20 300\n",
+            "30 200\n",
+            "40 100\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "AG6hRf0x0nEw"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
